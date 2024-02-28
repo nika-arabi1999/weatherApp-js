@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/css/weather-icons-wind.css" />
+    <link rel="stylesheet" href="style/css/weather-icons-wind.min.css" />
+    <link rel="stylesheet" href="style/css/weather-icons.css" />
+    <link rel="stylesheet" href="style/css/weather-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>WEATHER APP</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="main-title">Weather App</h1>
+      <div class="search-box">
+        <h3 class="enter-city-text">Enter the city name here</h3>
+        <input class="search-input" type="text" />
+      </div>
+    </header>
+    <div class="main-container">
+      <div class="weather-box">
+        <div class="weather-info">
+          <div class="main-info">
+            <div class="main-1">
+              <div class="name-sun-box">
+                <h2 class="city-name">
+                  <i class="fa-solid fa-location-dot"></i> City
+                </h2>
+                <div class="sun-info">
+                  <div class="sun sunrise">
+                    <i class="wi wi-sunrise"></i> sunrise
+                  </div>
+                  <div class="sun sunset">
+                    <i class="wi wi-sunset"></i> sunset
+                  </div>
+                </div>
+              </div>
+              <div class="info-temp"></div>
+            </div>
+            <div class="main-2">
+              <div class="info-icon">
+                <div class="the-icon"><i class="wi wi-thunderstorm"></i></div>
+                <p class="status">status</p>
+              </div>
+            </div>
+          </div>
+          <div class="extra-info">
+            <div class="extra-box wind-box">
+              <i class="fa-solid fa-wind"></i>Wind
+            </div>
+            <div class="extra-box humidity-box">
+              <i class="fa-solid fa-droplet"></i>Humidity
+            </div>
+            <div class="extra-box max-min-box">
+              <i class="fa-solid fa-bolt"></i>max/min
+            </div>
+            <div class="extra-box feels-like-box">
+              <i class="fa-solid fa-temperature-three-quarters"></i>Feels like
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- box -->
+      <div class="forcast weather-box">
+        <!-- <div class="list-btn"><i class="fa-solid fa-caret-left prev"></i></div> -->
+        <!-- forcast inside -->
+        <h3 id="forcast-box-title">forcast</h3>
+        <div class="forcast-list">
+          <!-- list contents -->
+        </div>
+        <!-- forcast inside -->
+        <!-- <div class="list-btn"><i class="fa-solid fa-caret-right next"></i></div> -->
+      </div>
+    </div>
+
+    <!-- box -->
+    <script type="module" src="/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6dd9092e55.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>

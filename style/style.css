@@ -1,0 +1,255 @@
+* {
+    font-size: 40%;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    height: 100%;
+    width: 100%;
+    background: rgb(174,218,238);
+     background: radial-gradient(circle, rgba(174,218,238,1) 0%,
+      rgba(239,253,255,1) 100%);
+      display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header { display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;}
+
+.main-container {
+    display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 3rem;
+}
+
+.main-title {
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: #00446b;
+}
+
+.enter-city-text {
+    font-size: 2rem;
+    font-weight: normal;
+    color: rgb(78, 100, 103);
+}
+.search-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+
+    border: 3px solid #000;
+    border-radius: 5px;
+    height: 50px;
+    line-height: normal;
+    color: #282828;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    user-select: auto;
+    font-size: 16px;
+    padding: 0 6px;
+    padding-left: 12px;
+    
+    
+}
+.search-input:focus {
+   
+        border:3px solid #000;
+        outline: none;
+
+}
+
+.info-icon {
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 9rem;
+    
+}
+
+img {
+    height: 15rem;
+    width: 15rem;
+}
+
+.info-temp {
+    font-size: 9rem;
+    font-weight: bold;
+}
+
+.weather-box {
+    box-sizing: border-box;
+    margin: 4rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(164, 217, 255, 0.1);
+    border-radius: 3rem;
+    box-shadow: rgba(17, 12, 46, 0.25) 0px 5px 50px 0px;
+    width: 80rem;
+    height: 65rem;
+    padding: 2rem 1rem;
+}
+
+.weather-info {
+    width: 98%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-info {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.extra-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* flex-direction: row;
+    justify-content:space-between;
+    align-items: center; */
+    margin-top: 5rem;
+    
+}
+
+.extra-box {
+    background-color: rgba(129, 131, 132, 0.1);
+    border-radius: 3rem;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 48px 100px 0px;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 3rem;
+    margin: 0.7rem;
+    font-size: 3rem;
+}
+
+i {
+    font-size: 3rem;
+    margin-right: 5px;
+}
+
+.wi {
+    font-size: 10rem;
+    color: rgb(0, 54, 102);
+}
+.city-name {
+    font-size: 5rem;
+}
+
+.city-name i {
+    font-size: 4rem;
+}
+
+.forcast {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80rem;
+    height: 65rem;
+    padding: 3px 5px;
+    font-size: 100px;
+}
+#forcast-box-title {
+    margin: 10px;
+    font-size: 5rem;
+}
+
+/* .list-btn i{
+    font-size: 3rem;
+    display: flex;
+    /* width: auto; */
+    /* height: 80px; */
+    /* justify-content: center;
+    align-items: center;} */
+   
+
+.forcast-list {
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.list-content {
+    background: rgba(0, 0, 0, 0.08);
+    padding: 10px;
+    margin: 5px;
+    border-radius:3rem;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 7rem;
+}
+
+.forcast-icon-box i {
+    font-size: 5rem;
+
+}
+.name-sun-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sun {
+    color: #02617e;
+    width: 24.5px;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.sun i{
+    color: #824a01;
+    width: 24.5px;
+    font-size: 3rem;
+    margin: 5px 10px  5px 15px; //trbl
+}
+
+
+
+
+.list-icon {
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+}
