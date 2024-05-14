@@ -1,11 +1,18 @@
 * {
     font-size: 40%;
 }
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 body {
     font-family: 'Fredoka', sans-serif;
     height: 100%;
     width: 100%;
+    max-width: 1300px;
     background: rgb(174,218,238);
      background: radial-gradient(circle, rgba(174,218,238,1) 0%,
       rgba(239,253,255,1) 100%);
@@ -22,6 +29,7 @@ align-items: center;
 justify-content: center;}
 
 .main-container {
+    width: 80%;
     display: flex;
 flex-direction: row;
 align-items: center;
@@ -94,15 +102,17 @@ img {
 
 .weather-box {
     box-sizing: border-box;
+    width: 50%;
     margin: 4rem 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
     background-color: rgba(164, 217, 255, 0.1);
     border-radius: 3rem;
     box-shadow: rgba(17, 12, 46, 0.25) 0px 5px 50px 0px;
-    width: 80rem;
+    min-width: 80rem;
     height: 65rem;
     padding: 2rem 1rem;
 }
@@ -148,6 +158,10 @@ img {
     font-size: 3rem;
 }
 
+.extra-box-title {
+    font-size: 3rem;
+}
+
 i {
     font-size: 3rem;
     margin-right: 5px;
@@ -166,12 +180,13 @@ i {
 }
 
 .forcast {
+    width: 50%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 80rem;
+    min-width: 50rem;
     height: 65rem;
     padding: 3px 5px;
     font-size: 100px;
@@ -252,4 +267,32 @@ i {
     justify-content: flex-start;
     align-items: center;
     gap: 7px;
+}
+
+@media screen and (max-width: 900px) {
+   .main-container {
+    flex-direction: column;
+   }
+
+   .weather-box {
+    min-width: 80rem;
+   }
+}
+
+@media screen and (max-width: 555px) {
+    .weather-box {
+        min-width: 50rem;
+        height: 70rem;
+    }
+    .extra-box-title {
+        display: none;
+    }
+    .name-sun-box {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+    .sun i {
+        margin: 0 5px 0 0;  //trbl
+    }
 }

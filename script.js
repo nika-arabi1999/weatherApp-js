@@ -46,7 +46,6 @@ function getData(PLACE) {
       const sunrise = new Date(data.city.sunrise * 1000);
       const sunset = new Date(data.city.sunset * 1000);
 
-
       const datap = data.list;
       // console.log(datap);
       forcast(datap);
@@ -65,7 +64,6 @@ function getData(PLACE) {
       setfeelsLike(feelsLike);
       setMaxMin(temperatureMax, temperatureMin);
       //
-      
     })
     .catch((err) => console.log(err));
 }
@@ -89,18 +87,18 @@ function kelvinToCelsius(temp) {
 }
 
 function setWind(windSpeed) {
-  windBox.innerHTML = `<i class="fa-solid fa-wind"></i>Wind: ${windSpeed} km/h`;
+  windBox.innerHTML = `<i class="fa-solid fa-wind"></i><span class="extra-box-title">Wind :</span>${windSpeed} km/h`;
 }
 function setHumidity(humidity) {
-  humidityBox.innerHTML = `<i class="fa-solid fa-droplet"></i>Humidity: ${humidity}%`;
+  humidityBox.innerHTML = `<i class="fa-solid fa-droplet"></i><span class="extra-box-title">Humidity :</span> ${humidity}%`;
 }
 function setfeelsLike(feelsLike) {
-  feelsLikeBox.innerHTML = `<i class="fa-solid fa-temperature-three-quarters"></i>Feels like ${kelvinToCelsius(
+  feelsLikeBox.innerHTML = `<i class="fa-solid fa-temperature-three-quarters"></i><span class="extra-box-title">Feels Like :</span> ${kelvinToCelsius(
     feelsLike
   )}°`;
 }
 function setMaxMin(temperatureMax, temperatureMin) {
-  maxMinBox.innerHTML = `<i class="fa-solid fa-bolt"></i>max/min: ${kelvinToCelsius(
+  maxMinBox.innerHTML = `<i class="fa-solid fa-bolt"></i><span class="extra-box-title">Max/Min :</span> ${kelvinToCelsius(
     temperatureMax
   )}°/${kelvinToCelsius(temperatureMin)}°`;
 }
